@@ -1,1 +1,46 @@
-print("Hello its Test")
+# 20213144 감우빈
+
+import numpy as np
+import matplotlib.pylab as plt
+
+a = np.array([2, 2])
+b = np.array([3, 4])
+c = np.array([4, 1])
+d = a + (c - a)
+e = b + (c - a)
+f = np.array([7, 7])
+g = np.array([8, 9])
+i = np.array([9, 6])
+j = f + (i - f)
+k = g + (i - f)
+l = np.array([1, 10])
+m = np.array([3, 12])
+n = np.array([4, 10])
+o = l + (n - l)
+p = m + (n - l)
+
+plt.annotate('', xy=b, xytext=a, arrowprops=dict(arrowstyle='->'))
+plt.annotate('', xy=e, xytext=d, arrowprops=dict(arrowstyle='->'))
+plt.annotate('', xy=g, xytext=f, arrowprops=dict(arrowstyle='->'))
+plt.annotate('', xy=k, xytext=j, arrowprops=dict(arrowstyle='->'))
+plt.annotate('', xy=m, xytext=l, arrowprops=dict(arrowstyle='->'))
+plt.annotate('', xy=p, xytext=o, arrowprops=dict(arrowstyle='->'))
+
+plt.text(1, 1.5, "Parasite")
+plt.text(2, 4, "BongjunHo")
+plt.text(3.5, 0.5, "Minari")
+plt.text(4, 3, "Chungisaac")
+plt.text(5, 6.5, "Infinite Challenge")
+plt.text(7.5, 9, "MBC")
+plt.text(7.5, 5.5, "Runningman")
+plt.text(10, 8, "SBS")
+plt.text(0.7, 9.6, "Psy")
+plt.text(2.5, 12, "Korean")
+plt.text(3, 9.5, "Vladimir Putin")
+plt.text(6, 12, "Russian")
+
+plt.xticks(np.arange(-2, 15))
+plt.yticks(np.arange(-2, 15))
+plt.xlim(0, 15)
+plt.ylim(0, 15)
+plt.show()
