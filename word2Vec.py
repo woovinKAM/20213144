@@ -1,5 +1,3 @@
-# 20213144 감우빈
-
 import numpy as np
 import matplotlib.pylab as plt
 
